@@ -1,0 +1,20 @@
+!!! 5
+html(lang="en")
+  title jade test
+  script(type='text/javascript')
+    if(foo){
+      bar();
+    }
+  body
+    p one two three four 
+      a.a(href="#") onclick
+    items = ["one", "two", "three"]
+    ul
+      each item, i in items
+        li #{item}: #{i}
+    youAreUsingJade = true
+    if youAreUsingJade
+      p You are amazing
+    else
+      p Get on it!
+
